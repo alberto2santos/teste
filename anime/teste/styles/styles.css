@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Gang of Three';
+    src: url('../assets/font/go3v2.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-box {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.main-box h2 {
+    font-family: 'Gang of Three', sans-serif;
+    font-size: 35px;
+}
+
+.header-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    height: 6vh;
+    width: 100%;
+    background-color: gray;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.header-title {
+    display: flex;
+    font-family: 'Gang of Three', sans-serif;
+    flex-direction: row;
+    font-size: 22px;
+    margin-left: .2rem;
+    color: black;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 5px;
+    padding: 0;
+}
+
+.nav-list a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.content-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: solid .5px black;
+    width: calc(33.33% - 10px);
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.box-imagem-card {
+    width: 100%;
+    height: 250px;
+    background-color: #c7c7c7;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.title-card {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.box-resume {
+    padding: 10px;
+    margin-bottom: 60px;
+}
+
+.resume {
+    font-size: 14px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.button-card {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 10 auto 0;
+    background-color: #333;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease;
+}
+
+.button-card:hover {
+    background-color: #555;
+}
+
